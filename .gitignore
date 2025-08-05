@@ -1,0 +1,36 @@
+# VS Code folders
+.vscode/
+**/.vscode/
+
+# Executable files
+*.exe
+*.out
+*.o
+*.obj
+
+# Output directories
+output/
+**/output/
+Output/
+**/Output/
+
+# Build directories
+build/
+**/build/
+Build/
+**/Build/
+
+# Temporary files
+temp/
+**/temp/
+tmp/
+**/tmp/
+tempCodeRunnerFile.*
+
+# Debug files
+*.pdb
+*.ilk
+
+# Log files
+*.log
+**/logs/
