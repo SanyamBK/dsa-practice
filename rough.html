@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter - Sanyam Barwar</title>
+    <style>
+        /* --- General & Typographic Styles --- */
+        :root {
+            --page-margin: 1in; /* Standard A4 margin */
+            --font-size: 11.5pt; /* Optimal for print readability */
+            --line-height: 1.6;
+            --main-font: "Georgia", "Times New Roman", serif;
+            --text-color: #1a1a1a;
+            --divider-color: #cccccc;
+            --container-width: 760px; /* For on-screen viewing */
+        }
+
+        body {
+            font-family: var(--main-font);
+            font-size: var(--font-size);
+            line-height: var(--line-height);
+            color: var(--text-color);
+            background-color: #f4f4f4; /* Light gray background for screen */
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* --- Page Container for Screen --- */
+        .page-container {
+            max-width: var(--container-width);
+            margin: 2rem auto; /* Center the container on screen */
+            padding: var(--page-margin);
+            background-color: #ffffff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        /* --- Semantic Element Styling --- */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin: 0 0 0.25rem 0;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            margin: 0 0 1.2rem 0;
+            text-align: justify;
+        }
+        
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        address {
+            font-style: normal;
+            font-size: 0.9rem;
+            color: #4a4a4a;
+        }
+
+        /* --- Header & Meta Info --- */
+        .letter-header {
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--divider-color);
+        }
+
+        .meta-info {
+            margin-bottom: 3rem;
+        }
+
+        /* --- Letter Body & Signature --- */
+        .letter-body p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .signature {
+            margin-top: 3rem;
+        }
+
+        /* --- Print-Specific Styles --- */
+        @media print {
+            body {
+                background-color: #ffffff; /* Ensure background is white for printing */
+                font-size: var(--font-size); /* Enforce print font size */
+            }
+
+            .page-container {
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            /* Avoid breaking elements across pages (good practice, though this is a single page) */
+            p, h1, address, .signature {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+
+        @page {
+            size: A4;
+            margin: var(--page-margin);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="page-container">
+
+        <!-- Header: Name and Contact Information -->
+        <header class="letter-header">
+            <h1>Sanyam Barwar</h1>
+            <address>
+                sanyam22447@iiitd.ac.in | +91-9876543210 | Delhi, India 
+
+            </address>
+        </header>
+
+        <!-- Meta: Date and Recipient -->
+        <section class="meta-info">
+            <p class="date">18 August 2025</p>
+            <p class="recipient">Hiring Committee, <br> Goldman Sachs</p>
+        </section>
+
+        <!-- Body: The main content of the letter -->
+        <section class="letter-body">
+            <p>Dear Hiring Committee,</p>
+
+            <p>I am excited to apply for the Software Engineering Analyst position at Goldman Sachs. With a B.Tech in Computer Science from IIIT Delhi and hands-on experience in scalable backend systems, I bring skills in data structures, algorithms, and AI-driven applications that align closely with your engineering teams.</p>
+
+            <p>At Mizzle Cloud Pvt. Ltd., I developed a production-ready FastAPI backend, automated 400+ OWASP-classified security tests, and integrated GPT-4 based compliance mapping, cutting audit time from days to minutes. My academic projects — including a ROS multi-robot coordination planner and a real-time Android weather app (scalable to 1M+ API calls) — further demonstrate my ability to design efficient, resilient, and impactful systems.</p>
+
+            <p>I admire Goldman Sachs' focus on scalable engineering, low-latency solutions, and AI adoption, and I am eager to contribute my technical skills and problem-solving mindset to your global technology teams.</p>
+
+            <p>Thank you for your time and consideration. I look forward to the opportunity to contribute to Goldman Sachs.</p>
+        </section>
+
+        <!-- Signature: Closing remarks -->
+        <footer class="signature">
+            <p>Best regards,</p>
+            <p>Sanyam Barwar</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
